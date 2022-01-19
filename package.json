@@ -1,0 +1,22 @@
+{
+  "name": "rethink-group",
+  "version": "1.0.0",
+  "description": "Corporate web site for the RETHINK GROUP",
+  "scripts": {
+    "start": "web-dev-server --root-dir public --open --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlockhart/rethink-group.git"
+  },
+  "author": "Dave Lockhart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlockhart/rethink-group/issues"
+  },
+  "homepage": "https://github.com/dlockhart/rethink-group#readme",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.29"
+  }
+}

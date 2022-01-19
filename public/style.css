@@ -1,0 +1,299 @@
+html {
+	font-size: 20px;
+}
+
+body {
+	background-color: #f6f7f8;
+	color: #5b6e80;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+a,
+a:link,
+a:visited {
+	color: #339999;
+	text-decoration: underline;
+}
+a:hover,
+a:focus {
+	color: #2f486a;
+}
+
+a.link-light,
+a.link-light:link,
+a.link-light:visited,
+a.link-light:hover,
+a.link-light:focus {
+	color: #1eebeb;
+}
+
+a.link-icon,
+a.link-icon:link,
+a.link-icon:visited {
+	align-items: center;
+	color: #5b6e80;
+	display: flex;
+	gap: 0.25rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a.link-icon:hover,
+a.link-icon:focus {
+	color: #2f486a;
+	outline: none;
+}
+a.link-icon:hover > span,
+a.link-icon:focus > span {
+	text-decoration: underline;
+}
+
+.link-icon-list {
+	display: flex;
+	gap: 1rem;
+	justify-content:
+	space-around;
+	padding: 1rem;
+}
+
+h2 {
+	text-align: center;
+}
+
+.nav {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	transition: top 0.5s;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav-container {
+	align-items: center;
+	display: flex;
+}
+
+.nav-home {
+	margin: 0;
+}
+
+.nav-home > a {
+	align-items: center;
+	display: flex;
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.75rem;
+	padding: 0.5rem 1.5rem;
+}
+.nav-home > a,
+.nav-home > a:link,
+.nav-home > a:visited {
+	color: #2f486a;
+	text-decoration: none;
+}
+.nav-home > a:hover,
+.nav-home > a:focus {
+	outline: none;
+	text-decoration: underline;
+}
+
+.nav-spacer {
+	flex-grow: 1;
+}
+
+.nav-filler {
+	height: calc(100px + 1rem);
+}
+
+nav > ul {
+	align-items: center;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 750px) {
+	nav > ul {
+		flex-direction: column;
+	}
+	.nav-filler {
+		height: 7rem;
+	}
+}
+
+.nav-link {
+	font-size: 0.9rem;
+	line-height: 1.75rem;
+	padding: 0.5rem 1.5rem;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+	color: #5b6e80;
+	text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+	color: #339999;
+	outline: none;
+}
+
+.hero {
+	background: url('./img/hero_5b.jpg') no-repeat bottom right;
+	background-size: cover;
+	color: white;
+}
+.hero h1 {
+	font-weight: normal;
+	line-height: 2rem;
+	margin: 0;
+}
+.hero p {
+	font-size: 1.4rem;
+	font-weight: 200;
+	line-height: 1.5rem;
+	margin: 2rem 0 4rem 0;
+	max-width: 600px;
+}
+
+.profile-wrapper {
+	align-items: flex-start;
+	display: flex;
+	flex: 1 1 auto;
+}
+.profile-wrapper > img {
+	height: 20vw;
+	max-height: 250px;
+	max-width: 200px;
+	width: 16vw;
+}
+.profile-wrapper > p {
+	flex: 1 1 auto;
+	margin: 1rem 1rem 0 1rem;
+}
+
+.center {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.columns {
+	align-items: stretch;
+	display: flex;
+	gap: 1.5rem;
+}
+.columns > .column {
+	flex: 1;
+}
+@media (max-width: 810px) {
+	.columns {
+		flex-direction: column;
+		gap: 0;
+	}
+	.columns.columns-gap {
+		gap: 1.5rem;
+	}
+}
+
+.offscreen {
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute !important;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.bg-dark {
+	background-color: #2f486a;
+	color: white;
+}
+
+.bg-white {
+	background-color: white;
+	border-bottom: 1px solid rgba(124, 134, 149, 0.18);
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%), 0 -1px 0 0 rgb(0 0 0 / 8%);
+}
+
+.shadow-bottom {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.shadow-inner {
+	box-shadow: inset 0 20px 20px -20px #000000;
+}
+
+.main-section {
+	padding: 1.5rem;
+}
+
+.card {
+	border: 6px solid white;
+	border-radius: 1rem;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+	color: #5b6e80;
+	font-size: 0.8rem;
+	padding: 1rem;
+}
+.card h3 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	margin-top: 0;
+	text-align: center;
+}
+.card ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.card-blue {
+	background-color: #E8EEF2;
+}
+.card-teal {
+	background-color: #D8F3F3;
+}
+
+/*.button-more {
+	background-color: #2f486a;
+	border-radius: 0.25rem;
+	
+	display: inline-block;
+	font-size: 0.8rem;
+	line-height: 1;
+	padding: 0.75rem 1.25rem;
+	text-transform: uppercase;
+}
+.button-more,
+.button-more:link,
+.button-more:visited {
+	color: white;
+	text-decoration: none;;
+}*/
+
+section#contact > div {
+	align-items: center;
+	display: flex;
+	gap: 1.5rem;
+	justify-content: space-between;
+	text-align: center;
+}
+section#contact h2,
+section#contact p {
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 675px) {
+	section#contact > div {
+		flex-direction: column;
+	}
+}
