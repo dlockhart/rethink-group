@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Corporate web site for the RETHINK GROUP",
   "scripts": {
+    "lint:style": "stylelint \"**/*.css\"",
     "start": "web-dev-server --root-dir public --open --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint:style"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/dlockhart/rethink-group#readme",
   "devDependencies": {
-    "@web/dev-server": "^0.1.29"
+    "@web/dev-server": "^0.1",
+    "stylelint": "^14",
+    "stylelint-config-recommended": "^6",
+    "stylelint-order": "^5"
   }
 }
