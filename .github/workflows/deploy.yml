@@ -16,4 +16,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ca-central-1
       - name: Deploy to rethinkgroup.ca S3 bucket
-        run: aws s3 sync ./public/ s3://rethinkgroup.ca --delete
+        run: aws s3 sync ./public/ s3://www.rethinkgroup.ca --delete
