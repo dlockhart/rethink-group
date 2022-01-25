@@ -144,7 +144,7 @@ nav > ul {
 }
 
 .hero {
-	background: url('./img/hero.jpg') no-repeat bottom right;
+	background: url('./hero.jpg?v=1') no-repeat bottom right;
 	background-size: cover;
 	color: white;
 }
