@@ -17,6 +17,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ca-central-1
       - name: Deploy Static Assets to S3
-        run: aws s3 sync ./public/ s3://www.rethinkgroup.ca --dryrun --exclude "index.html" --delete --cache-control "public, max-age=31536000, immutable"
+        run: aws s3 sync ./public/ s3://www.rethinkgroup.ca --exclude "index.html" --delete --cache-control "public, max-age=31536000, immutable"
       - name: Deploy index.html to S3
-        run: aws s3 sync ./public/ s3://www.rethinkgroup.ca --dryrun --exclude "*" --include "index.html" --cache-control "public, max-age=3600"
+        run: aws s3 sync ./public/ s3://www.rethinkgroup.ca --exclude "*" --include "index.html" --cache-control "public, max-age=3600"
