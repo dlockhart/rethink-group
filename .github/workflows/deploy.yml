@@ -18,5 +18,5 @@ jobs:
           aws-region: ca-central-1
       - name: Deploying to S3
         run: |
-          aws s3 sync ./public/ s3://www.rethinkgroup.ca --dryrun --include "./static/*" --delete --cache-control "public, max-age=31536000, immutable"
-          aws s3 sync ./public/ s3://www.rethinkgroup.ca --dryrun --include "./index.html" --delete --cache-control "public, max-age=3600"
+          aws s3 sync ./public/ s3://www.rethinkgroup.ca --dryrun --exclude "*" --include "./static/*" --delete --cache-control "public, max-age=31536000, immutable"
+          aws s3 sync ./public/ s3://www.rethinkgroup.ca --dryrun --exclude "*" --include "./index.html" --delete --cache-control "public, max-age=3600"
