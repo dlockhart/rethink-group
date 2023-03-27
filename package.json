@@ -20,7 +20,7 @@
   "devDependencies": {
     "@web/dev-server": "^0.1",
     "stylelint": "^15",
-    "stylelint-config-recommended": "^10",
+    "stylelint-config-recommended": "^11",
     "stylelint-order": "^6"
   }
 }
