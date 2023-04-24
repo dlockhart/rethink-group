@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/dlockhart/rethink-group#readme",
   "devDependencies": {
-    "@web/dev-server": "^0.1",
+    "@web/dev-server": "^0.2",
     "stylelint": "^15",
     "stylelint-config-recommended": "^12",
     "stylelint-order": "^6"
