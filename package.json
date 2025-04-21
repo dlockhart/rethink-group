@@ -21,6 +21,6 @@
     "@web/dev-server": "^0.4",
     "stylelint": "^16",
     "stylelint-config-recommended": "^15",
-    "stylelint-order": "^6"
+    "stylelint-order": "^7"
   }
 }
